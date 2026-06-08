@@ -1,1 +1,114 @@
-{"theme": "dark", "archetype": "5 (Luxury)"}
+{
+  "theme": "dark",
+  "archetype": "5 (Luxury)",
+  "typography": {
+    "fonts": [
+      {
+        "name": "Playfair Display",
+        "type": "heading",
+        "url": "https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      },
+      {
+        "name": "Outfit",
+        "type": "body",
+        "url": "https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap"
+      }
+    ],
+    "rules": {
+      "headings": "font-serif (Playfair Display), tracking-tight, elegant. Do not use generic sans for headings.",
+      "body": "font-sans (Outfit), clean and readable.",
+      "h1": "text-4xl sm:text-5xl lg:text-6xl tracking-tighter",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl tracking-tight",
+      "h3": "text-xl sm:text-2xl",
+      "body_text": "text-base leading-relaxed"
+    }
+  },
+  "colors": {
+    "light": {
+      "background": "0 0% 100%",
+      "foreground": "0 0% 7%",
+      "card": "0 0% 100%",
+      "card-foreground": "0 0% 7%",
+      "popover": "0 0% 100%",
+      "popover-foreground": "0 0% 7%",
+      "primary": "223 39% 7%",
+      "primary-foreground": "60 56% 91%",
+      "secondary": "60 20% 96%",
+      "secondary-foreground": "223 39% 7%",
+      "muted": "60 20% 96%",
+      "muted-foreground": "0 0% 40%",
+      "accent": "60 56% 91%",
+      "accent-foreground": "223 39% 7%",
+      "destructive": "0 84% 60%",
+      "destructive-foreground": "0 0% 100%",
+      "border": "0 0% 90%",
+      "input": "0 0% 90%",
+      "ring": "223 39% 7%",
+      "radius": "0.5rem"
+    },
+    "dark": {
+      "background": "223 39% 7%",
+      "foreground": "60 56% 91%",
+      "card": "222 30% 10%",
+      "card-foreground": "60 56% 91%",
+      "popover": "222 30% 10%",
+      "popover-foreground": "60 56% 91%",
+      "primary": "60 56% 91%",
+      "primary-foreground": "223 39% 7%",
+      "secondary": "220 20% 14%",
+      "secondary-foreground": "60 56% 91%",
+      "muted": "220 20% 14%",
+      "muted-foreground": "60 20% 70%",
+      "accent": "220 20% 14%",
+      "accent-foreground": "60 56% 91%",
+      "destructive": "0 62% 30%",
+      "destructive-foreground": "60 56% 91%",
+      "border": "220 20% 18%",
+      "input": "220 20% 18%",
+      "ring": "60 56% 91%",
+      "radius": "0.5rem"
+    },
+    "status_badges": {
+      "open": "bg-blue-500/10 text-blue-400 border-blue-500/20",
+      "offer_received": "bg-purple-500/10 text-purple-400 border-purple-500/20",
+      "accepted": "bg-amber-500/10 text-amber-400 border-amber-500/20",
+      "payment_pending": "bg-orange-500/10 text-orange-400 border-orange-500/20",
+      "confirmed": "bg-emerald-500/10 text-emerald-400 border-emerald-500/20",
+      "completed": "bg-slate-500/10 text-slate-400 border-slate-500/20",
+      "cancelled": "bg-red-500/10 text-red-400 border-red-500/20"
+    }
+  },
+  "spacing_and_layout": {
+    "philosophy": "Generous Spacing. p-6 or p-8 for cards.",
+    "grid": "Asymmetrical grids for marketing page. Control Room grid for dashboards.",
+    "borders": "Subtle 1px borders (border-white/10). No heavy drop shadows in dark mode, rely on borders and subtle gradients."
+  },
+  "components": {
+    "cards": "Flat background (bg-card), 1px subtle border, rounded-lg. Hover: Slight lift and border color transition.",
+    "buttons": "Primary buttons use cream (primary) with dark text. Clean edges or rounded-md.",
+    "status_badges": "Shadcn Badge with custom outlined/soft variants from status_badges colors.",
+    "ride_cards": "Clear hierarchy. Date/Time prominent. Route (pickup -> dropoff) uses an icon to connect. Status badge top right."
+  },
+  "media": {
+    "hero_image": "https://images.pexels.com/photos/36377051/pexels-photo-36377051.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "sedan_image": "https://images.unsplash.com/photo-1485291571150-772bcfc10da5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NTYxODF8MHwxfHNlYXJjaHwxfHxibGFjayUyMGx1eHVyeSUyMHNlZGFufGVufDB8fHx8MTc4MDg2NjI0Nnww&ixlib=rb-4.1.0&q=85",
+    "suv_image": "https://images.unsplash.com/photo-1735620731955-b047a7122892?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Njl8MHwxfHNlYXJjaHwxfHxsdXh1cnklMjBzdXYlMjBibGFja3xlbnwwfHx8fDE3ODA4NjYyNDZ8MA&ixlib=rb-4.1.0&q=85",
+    "chauffeur_detail": "https://images.pexels.com/photos/7594130/pexels-photo-7594130.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "motion": {
+    "hover": "transition-all duration-200 ease-in-out",
+    "entrance": "Staggered fade-up for list items."
+  },
+  "icons": "lucide-react",
+  "accessibility": {
+    "data_testid": "MANDATORY on all interactive and key informational elements (kebab-case, role-based)."
+  },
+  "instructions_to_main_agent": [
+    "Ensure dark mode is the default and only visible theme as per luxury archetype. Use the provided HSL values for the charcoal/slate and cream palette.",
+    "Implement the landing page with the hero image provided and an asymmetrical layout.",
+    "Dashboards should use 'Control Room' dense grid, with Shadcn components customized to match the colors.",
+    "Status badges must follow the exact color tokens provided in status_badges.",
+    "Ride cards should elegantly display Pickup, Dropoff, Date, Time, and Vehicle Type.",
+    "Add 'data-testid' to all buttons, inputs, links, and key elements."
+  ]
+}
